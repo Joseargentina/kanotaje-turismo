@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <title>Kanotaje Turismo</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__contenedor">
+            <div class="header__logo">
+                <a href="./pages/inicio.html">Logo</a>
+            </div>
+
+            <div class="header__registro">
+                <a class="registro" href="#">Iniciar Seción</a>
+                <a class="registro" href="#">Registrarse</a>
+            </div>
+        </div>
+
+        <nav class="navegacion contenedor">
+            <a href="#" class="navegacion__enlace">Alquiler de Kayacks</a>
+            <a href="#" class="navegacion__enlace">Salidas Grupales</a>
+            <a href="#" class="navegacion__enlace">Tienda</a>
+            <a href="#" class="navegacion__enlace">Capacitación</a>
+        </nav>
+    </header>
+
+    <main class="main contenedor">
+        <div class="main__actividades">
+            <div class="contenedor__imagenes">
+                <img class="contenedor__imagen" src="./assets/img/familia-kayaking-34075905.jpg" alt="imagen kayack">
+                <p>Alquiler de Kayacks</p>
+
+                <p>+ de 10 años en el mercado</p>
+            </div>
+            <div class="contenedor__imagenes">
+                <img class="contenedor__imagen" src="./assets/img/descarga (2).jpg" alt="imagen kayack">
+                <p>Salidas Grupales</p>
+
+                <p>Reservas super rapídas</p>
+            </div>
+            <div class="contenedor__imagenes">
+                <img class="contenedor__imagen" src="./assets/img/images.jpg" alt="imagen kayack">
+                <p>Tienda</p>
+
+                <p>Mejor precio del mercado</p>
+            </div>
+        </div>
+    </main>
+
+    <section class="busqueda contenedor">
+        <h2 class="busqueda__heading text-center">Busqueda de Actividades</h2>
+        <form action="" class="formulario">
+            <label for="nombre">Palabra Clave
+                <input type="text" id="nombre" placeholder="palabra clave" required>
+            </label>
+
+            <label for="categoria">Categoría
+                <input type="text" id="categoria" placeholder="categoria" required>
+            </label>
+
+            <label for="fecha">Fecha
+                <input type="date" id="fecha" required>
+            </label>
+
+            <input type="submit" value="Buscar">
+        </form>
+    </section>
+
+    <footer class="footer text-center">
+        <p>Todos los derechos reservados Kanotaje Turismo</p>
+    </footer>
+</body>
+</html>
