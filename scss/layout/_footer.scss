@@ -1,0 +1,7 @@
+@use '../utilities/mixins' as m;
+@use '../utilities/variables' as v;
+
+.footer p {
+    background-color:#107381;
+    margin: 5rem 0 0 0;
+}

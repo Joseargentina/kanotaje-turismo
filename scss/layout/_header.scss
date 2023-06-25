@@ -1,0 +1,40 @@
+@use '../utilities/mixins' as m;
+@use '../utilities/variables' as v;
+
+header {
+    padding: 5rem 2rem 60rem 2rem;
+    background-image: url('../assets/img/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header__contenedor {
+    @include m.flex(column, 2rem);
+}
+
+.header__registro {
+    @extend .header__contenedor;
+}
+.registro {
+    @include m.boton(v.$blanco, v.$negro);
+}
+
+.navegacion {
+    padding: 5rem 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+}
+.navegacion__enlace {
+    color:#a23131;
+    transition-property: background-color;
+    transition-duration: .3s;
+    padding: 1rem;
+    font-family: var(--fuenteprincipal);
+    font-size: 1.8rem;
+}
+
+:hover.navegacion__enlace {
+    background-color: #107381;
+    color:#fff;
+}
